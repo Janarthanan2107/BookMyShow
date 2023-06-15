@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book My Show</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/images/cinema.png" type="image/x-icon">
+    <!-- normalized-css -->
+    <link rel="stylesheet" href="./style/normalized.css">
+    <!-- fontAwesome-CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- customized-css -->
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+    <h1 class="title"><img class="image" src="assets/images/cinema.png"> Book My Show</h1>
+    <main class="main">
+        <div class="main-header">
+            <h3 class="sub-title">Select Your Movie <i class="fa-solid fa-couch"></i> Here!</h3>
+        </div>
+        <div class="selection-container">
+            <div class="movieSelection-container">
+                <label id="movie-price">Pick a movie:</label>
+                <select name="movie-price" id="movie-price" aria-placeholder="Select Your Movie" class="dropdown">
+                    <option disabled selected>Select Your Movie</option>
+                    <option value="100">Rise Of Transformer</option>
+                    <option value="200">Veeran</option>
+                    <option value="300">Spider-Man</option>
+                    <option value="400">Gaurdians of galaxy</option>
+                </select>
+            </div>
+            <!-- <div class="seatSelection-container">
+                <label id="movie-price">Show Timings:</label>
+                <select name="movie-price" id="movie-price" aria-placeholder="Select Your Timing" class="dropdown">
+                    <option disabled selected>Select Your Timing</option>
+                    <option value="Transformer">10:00 AM</option>
+                    <option value="Veeran">2:00 PM</option>
+                    <option value="Spider-Man">4:00 PM</option>
+                </select>
+            </div> -->
+        </div>
+        <div class="legend-container">
+            <div class="legend-info">
+                <div class="seat"></div>
+                <span class="legend-text">Available</span>
+            </div>
+            <div class="legend-info">
+                <div class="seat selected"></div>
+                <span class="legend-text">Selected</span>
+            </div>
+            <div class="legend-info">
+                <div class="seat occupy"></div>
+                <span class="legend-text">Occupied</span>
+            </div>
+        </div>
+        <div class="screen-container">
+            <div class="screen"></div>
+            <div class="seats-container">
+                <div class="rows">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+                <div class="rows">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat occupy"></div>
+                    <div class="seat occupy"></div>
+                    <div class="seat"></div>
+                </div>
+                <div class="rows">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+                <div class="rows">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat occupy"></div>
+                    <div class="seat occupy"></div>
+                </div>
+                <div class="rows">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+                <div class="rows">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+            </div>
+        </div>
+        <p class="message">
+            You have selected <span class="count" id="count">0</span> seats for a total of <span class="total"
+                id="total">$1650</span>
+        </p>
+    </main>
+    <script src="./script/script.js"></script>
+</body>
+
+</html>
